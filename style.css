@@ -1,0 +1,94 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #4b79a1 0%, #283e51 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    text-align: center;
+    padding: 60px 0;
+}
+
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4b79a1;
+}
+
+.project {
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project h3 a {
+    color: #283e51;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project h3 a:hover {
+    color: #4b79a1;
+}
+
+
+.project p {
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
