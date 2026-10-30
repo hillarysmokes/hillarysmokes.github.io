@@ -1,68 +1,474 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hillary Smoke's Portfolio</title>
+
+    <meta name="description" content="Hillary Smoke — ICT professional, software developer, and founder of Clyix Digital Infrastructure.">
+    <meta name="author" content="Hillary Smoke">
+    <meta name="theme-color" content="#0b1120">
+
+    <title>Hillary Smoke | ICT Professional & Digital Entrepreneur</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Hillary Smoke</h1>
-            <p>Web Developer | Tech Visionary | Entrepreneur</p>
-            <nav>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="logo">
+                <span class="logo-mark">HS</span>
+                <span>Hillary<span class="accent">.</span></span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Open navigation menu"
+                    aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
                 <a href="#about">About</a>
+                <a href="#expertise">Expertise</a>
                 <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
+                <a href="#journey">Journey</a>
+                <a href="#contact" class="nav-contact">Let's Talk <span>↗</span></a>
+            </div>
+        </nav>
     </header>
-    
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>I am Hillary Smoke, a seasoned web developer with a penchant for innovation and entrepreneurship. As the founder of Clyix Web Developers Pvt Ltd, I specialize in creating tailored web solutions that empower businesses to thrive in the digital era. My journey in technology has been driven by a relentless pursuit of excellence and a deep desire to contribute meaningfully to the tech industry.</p>
-    </section>
-    
-    <section id="projects" class="container">
-        <h2>Highlighted Projects</h2>
-        <div class="project">
-            <h3><a href="#" target="_blank">Component-Based Learning System</a></h3>
-            <p>A Windows application developed based on the 4C/ID learning model to facilitate self-paced learning. This system provides an intuitive and engaging environment for learners to develop their skills progressively.</p>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    ICT Professional & Digital Entrepreneur
+                </div>
+
+                <p class="eyebrow">HELLO, I'M HILLARY SMOKE</p>
+
+                <h1>
+                    Building technology<br>
+                    that <span class="gradient-text">solves real problems.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I'm an ICT professional, software developer, and entrepreneur
+                    passionate about building reliable digital infrastructure,
+                    practical software, and technology-driven businesses.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="button button-primary">
+                        Explore My Work <span>↗</span>
+                    </a>
+                    <a href="#contact" class="button button-secondary">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/hillarysmokes"
+                       target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <span class="social-divider"></span>
+                    <a href="mailto:hillarysmokes@gmail.com">Email ↗</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="visual-top">
+                        <div class="window-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="visual-label">DIGITAL BUILDER</span>
+                    </div>
+
+                    <div class="code-window">
+                        <p><span class="code-purple">const</span> developer = {</p>
+                        <p class="indent">name: <span class="code-green">"Hillary Smoke"</span>,</p>
+                        <p class="indent">role: <span class="code-green">"ICT Professional"</span>,</p>
+                        <p class="indent">focus: [</p>
+                        <p class="indent-2"><span class="code-green">"Infrastructure"</span>,</p>
+                        <p class="indent-2"><span class="code-green">"Software"</span>,</p>
+                        <p class="indent-2"><span class="code-green">"Business"</span></p>
+                        <p class="indent">],</p>
+                        <p class="indent">mindset: <span class="code-green">"Build & Grow"</span></p>
+                        <p>};</p>
+                    </div>
+
+                    <div class="visual-footer">
+                        <span class="footer-icon">✳</span>
+                        <div>
+                            <strong>Ideas into infrastructure.</strong>
+                            <p>Technology with purpose.</p>
+                        </div>
+                        <span class="footer-arrow">↗</span>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-card-top">
+                    <span class="floating-icon">⌘</span>
+                    <div>
+                        <strong>Technology</strong>
+                        <small>Build. Connect. Improve.</small>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-card-bottom">
+                    <span class="floating-icon green-icon">↗</span>
+                    <div>
+                        <strong>Entrepreneurship</strong>
+                        <small>Ideas into opportunities.</small>
+                    </div>
+                </div>
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+            </div>
+        </section>
+
+        <section class="trust-strip">
+            <div class="container trust-content">
+                <span>MY WORLD OF WORK</span>
+                <div>IT Infrastructure</div>
+                <div>Software Development</div>
+                <div>Networking</div>
+                <div>Digital Business</div>
+            </div>
+        </section>
+
+        <section class="section container" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">01 / ABOUT ME</p>
+                <h2>Technology is the tool.<br><span class="muted-heading">Impact is the goal.</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>
+                        I'm Hillary Smoke, a Zimbabwean IT professional with a
+                        background in information technology, software development,
+                        networking, and systems administration.
+                    </p>
+
+                    <p>
+                        My work combines hands-on technical support with a broader
+                        interest in building systems that make organisations more
+                        efficient. I enjoy solving operational problems, improving
+                        digital infrastructure, and turning practical ideas into
+                        useful products and services.
+                    </p>
+
+                    <p>
+                        Outside my professional role, I'm growing Clyix Digital
+                        Infrastructure — a business focused on helping people and
+                        organisations get more value from technology.
+                    </p>
+
+                    <a href="#contact" class="text-link">Have a project in mind? Let's talk <span>↗</span></a>
+                </div>
+
+                <div class="about-details">
+                    <div class="detail-card">
+                        <span class="detail-number">01</span>
+                        <div>
+                            <h3>Practical Problem-Solving</h3>
+                            <p>Finding workable solutions to real-world IT challenges.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <span class="detail-number">02</span>
+                        <div>
+                            <h3>Systems Thinking</h3>
+                            <p>Connecting infrastructure, software, people, and processes.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <span class="detail-number">03</span>
+                        <div>
+                            <h3>Entrepreneurial Mindset</h3>
+                            <p>Building sustainable services around useful technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-panel" id="expertise">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">02 / EXPERTISE</p>
+                    <h2>What I <span class="gradient-text">bring to the table.</span></h2>
+                    <p class="section-intro">
+                        A blend of technical capability, practical experience,
+                        and a business-focused approach to technology.
+                    </p>
+                </div>
+
+                <div class="expertise-grid">
+                    <article class="expertise-card">
+                        <div class="card-icon">⌘</div>
+                        <span class="card-index">01</span>
+                        <h3>IT Infrastructure</h3>
+                        <p>Deploying, maintaining, and improving the systems that organisations depend on.</p>
+                        <div class="tag-list">
+                            <span>Systems Administration</span>
+                            <span>Linux</span>
+                            <span>IT Support</span>
+                        </div>
+                    </article>
+
+                    <article class="expertise-card">
+                        <div class="card-icon">⌁</div>
+                        <span class="card-index">02</span>
+                        <h3>Networking</h3>
+                        <p>Building and troubleshooting connectivity solutions for users and organisations.</p>
+                        <div class="tag-list">
+                            <span>Routing</span>
+                            <span>Wi-Fi</span>
+                            <span>Network Security</span>
+                        </div>
+                    </article>
+
+                    <article class="expertise-card">
+                        <div class="card-icon">&lt;/&gt;</div>
+                        <span class="card-index">03</span>
+                        <h3>Software Development</h3>
+                        <p>Creating web applications and practical systems to simplify everyday workflows.</p>
+                        <div class="tag-list">
+                            <span>PHP</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+                        </div>
+                    </article>
+
+                    <article class="expertise-card">
+                        <div class="card-icon">↗</div>
+                        <span class="card-index">04</span>
+                        <h3>Digital Entrepreneurship</h3>
+                        <p>Developing technology-based services and exploring sustainable business models.</p>
+                        <div class="tag-list">
+                            <span>Digital Services</span>
+                            <span>Product Thinking</span>
+                            <span>Business Growth</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="projects">
+            <div class="section-heading heading-row">
+                <div>
+                    <p class="eyebrow">03 / SELECTED WORK</p>
+                    <h2>Projects & <span class="muted-heading">ventures.</span></h2>
+                </div>
+                <a href="https://github.com/hillarysmokes"
+                   target="_blank" rel="noopener noreferrer" class="text-link">
+                    Visit GitHub <span>↗</span>
+                </a>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card project-featured">
+                    <div class="project-topline">
+                        <span class="project-type">DIGITAL INFRASTRUCTURE</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <div class="project-art art-clyix">
+                        <div class="art-orbit"></div>
+                        <div class="art-content">
+                            <span class="art-mark">C</span>
+                            <span>CLYIX</span>
+                            <small>Digital Infrastructure</small>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Clyix Digital Infrastructure</h3>
+                        <p>
+                            A technology venture focused on digital services,
+                            web solutions, infrastructure, and connectivity.
+                        </p>
+                        <div class="project-bottom">
+                            <div class="tag-list">
+                                <span>Infrastructure</span>
+                                <span>Web Services</span>
+                            </div>
+                            <a href="https://clyixwebdevs.co.zw"
+                               target="_blank" rel="noopener noreferrer"
+                               aria-label="Visit Clyix website">Explore ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-topline">
+                        <span class="project-type">WEB TOOLS</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <div class="project-art art-tools">
+                        <div class="tool-shape shape-one">&lt;/&gt;</div>
+                        <div class="tool-shape shape-two">⚙</div>
+                        <div class="tool-shape shape-three">✳</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Clyix Tools</h3>
+                        <p>A collection of online tools designed to make everyday digital tasks easier.</p>
+                        <div class="project-bottom">
+                            <div class="tag-list">
+                                <span>Web</span>
+                                <span>Utilities</span>
+                            </div>
+                            <a href="https://tools.clyixwebdevs.co.zw"
+                               target="_blank" rel="noopener noreferrer">Explore ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-topline">
+                        <span class="project-type">DIGITAL PLATFORM</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <div class="project-art art-zibnb">
+                        <div class="zibnb-window">
+                            <span class="zibnb-dot"></span>
+                            <span class="zibnb-dot"></span>
+                            <span class="zibnb-dot"></span>
+                            <div class="zibnb-line"></div>
+                            <div class="zibnb-line short-line"></div>
+                            <div class="zibnb-blocks"><i></i><i></i><i></i></div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Zibnb</h3>
+                        <p>A digital platform project within my broader technology and entrepreneurship interests.</p>
+                        <div class="project-bottom">
+                            <div class="tag-list">
+                                <span>Digital Product</span>
+                            </div>
+                            <a href="https://zibnb.clyixwebdevs.co.zw"
+                               target="_blank" rel="noopener noreferrer">Explore ↗</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <p class="project-note">
+                Project descriptions and links should be updated to reflect the
+                current status and availability of each project.
+            </p>
+        </section>
+
+        <section class="section section-panel" id="journey">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">04 / MY JOURNEY</p>
+                    <h2>Learning, building, <span class="muted-heading">evolving.</span></h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">2026 — PRESENT</div>
+                        <div class="timeline-content">
+                            <span class="timeline-label">PROFESSIONAL ROLE</span>
+                            <h3>ICT Officer</h3>
+                            <h4>Mutoko District Hospital</h4>
+                            <p>
+                                Supporting ICT operations, infrastructure,
+                                connectivity, systems implementation, and
+                                digital health initiatives.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">2023 — PRESENT</div>
+                        <div class="timeline-content">
+                            <span class="timeline-label">ENTREPRENEURSHIP</span>
+                            <h3>Founder</h3>
+                            <h4>Clyix Digital Infrastructure</h4>
+                            <p>
+                                Developing a technology business around web
+                                services, digital infrastructure, connectivity,
+                                and practical business solutions.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">2018 — 2022</div>
+                        <div class="timeline-content">
+                            <span class="timeline-label">EDUCATION</span>
+                            <h3>BSc (Honours) in Information Technology</h3>
+                            <h4>Chinhoyi University of Technology</h4>
+                            <p>
+                                Developed a foundation in information technology,
+                                software engineering, programming, and information systems.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section container" id="contact">
+            <div class="contact-box">
+                <div class="contact-decoration decoration-one"></div>
+                <div class="contact-decoration decoration-two"></div>
+
+                <p class="eyebrow">05 / LET'S CONNECT</p>
+                <h2>Have an idea?<br><span class="gradient-text">Let's build something useful.</span></h2>
+                <p class="contact-description">
+                    Whether it's a technology project, an infrastructure challenge,
+                    or a business opportunity, I'm open to meaningful conversations.
+                </p>
+
+                <a href="mailto:hillarysmokes@gmail.com" class="button button-primary">
+                    Email Me <span>↗</span>
+                </a>
+
+                <div class="contact-email">hillarysmokes@gmail.com</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a href="#home" class="logo">
+                <span class="logo-mark">HS</span>
+                <span>Hillary<span class="accent">.</span></span>
+            </a>
+
+            <p>Building with purpose. Growing through technology.</p>
+
+            <div class="footer-links">
+                <a href="https://github.com/hillarysmokes"
+                   target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="mailto:hillarysmokes@gmail.com">Email ↗</a>
+            </div>
+
+            <p class="copyright">
+                © <span id="current-year"></span> Hillary Smoke. All rights reserved.
+            </p>
         </div>
-        <div class="project">
-            <h3><a href="#" target="_blank">Lomabil Workflow System</a></h3>
-            <p>An efficient loan application data capture system built using PHP and MySQL. This workflow system significantly enhances operational efficiency by streamlining the loan application process for financial institutions.</p>
-        </div>
-        <div class="project">
-            <h3><a href="https://tools.clyixwebdevs.co.zw" target="_blank">ClyixWebDev Free Tools</a></h3>
-            <p>A suite of online tools designed to assist users in their daily operations. These tools, developed in various programming languages, demonstrate versatility in solving practical problems for a broad audience.</p>
-        </div>
-        <div class="project">
-            <h3><a href="https://clyixwebdevs.co.zw" target="_blank">Clyix Web Developers</a></h3>
-            <p>A pioneering web development company delivering custom websites and applications designed to elevate business presence online. We pride ourselves on blending creativity with functionality.</p>
-        </div>
-        <div class="project">
-            <h3><a href="#" target="_blank">QuickCast</a></h3>
-            <p>An innovative video recording and sharing platform that redefines user engagement by providing seamless, high-quality content creation and distribution tools.</p>
-        </div>
-        <div class="project">
-            <h3><a href="https://zibnb.clyixwebdevs.co.zw" target="_blank">Zibnb</a></h3>
-            <p>A modern accommodation booking platform tailored for Zimbabwe's unique tourism landscape, offering a blend of local authenticity with global usability standards.</p>
-        </div>
-    </section>
-    
-    
-    
-    <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:hillarysmoke@email.com">hillarysmoke@email.com</a></p>
-        <p>Twitter: <a href="https://twitter.com/HillarySmoke" target="_blank">@HillarySmoke</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Hillary Smoke. All rights reserved. | <a href="#about">Back to top</a></p>
     </footer>
 </body>
 </html>
+```
